@@ -1,0 +1,193 @@
+$mobile: 375px;
+$desktop: 1440px;
+
+//primaury colors//
+$softBlue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+//neutral colors//
+$veryDarkBlueMainBg: hsl(217, 54%, 11%); //main bg//
+$veryDarkBlueCardBg: hsl(216, 50%, 16%); //card bg//
+$veryDarkBlueLine: hsl(215, 32%, 27%); //line//
+$white: hsl(0, 0%, 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: $veryDarkBlueMainBg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.card {
+    overflow: hidden;
+    width: 350px;
+    height: 560px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: $veryDarkBlueCardBg;
+    margin-bottom: 20px;  
+}
+
+.top-img {
+    position: relative;
+    height: 300px;
+   
+    
+}
+
+.top-img img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.top-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 8px;
+    display:none;
+    cursor: pointer;
+    
+}
+
+.top-img-overlay img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.top-img:hover .top-img-overlay{
+    display: block; 
+}
+
+.text h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: 25px 0 15px 0;
+}
+
+.text a {
+    color: $white;
+    text-decoration: none; 
+}
+
+.text a:hover {
+    color: $cyan;
+}
+
+.text p {
+    color: $softBlue;
+    font-weight: 300;
+    font-size: 1rem;
+    
+}
+
+.text-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 15px 0;
+}
+
+.eth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eth p {
+    margin-left: 5px;
+    color: $cyan;
+    font-weight: 400;
+}
+
+.days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days p {
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+hr {
+    border-color: $veryDarkBlueLine;
+    margin-bottom: 15px;
+}
+
+.author {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.author p {
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+
+.author img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid $white;
+}
+
+.author a {
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+     
